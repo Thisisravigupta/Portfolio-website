@@ -101,4 +101,7 @@
     input[type=submit]{
         width: 40%;
     }
+    .fa-arrow-circle-up{
+        right: 30px;
+    }
 }
