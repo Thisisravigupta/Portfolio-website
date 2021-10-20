@@ -40,12 +40,12 @@ document.querySelector(".bar3").addEventListener("click", function () {
   document.querySelector(".bar2").classList.remove("active");
   document.querySelector(".bar3").classList.add("active");
 
-  // ------Close Nav when clicking on link------
-  let listItem = document.querySelectorAll(".list-item");
-  for (let i = 0; i <= listItem.length; i++) {
-    listItem[i].addEventListener("click", function () {
-      document.querySelector(".nav").style.display = "none";
-      document.querySelector("span").classList.remove("active");
-    });
-  }
 });
+// ------Close Nav when clicking on link------
+let listItem = document.querySelectorAll(".list-item");
+for (let i = 0; i <= listItem.length; i++) {
+  listItem[i].addEventListener("click", function () {
+    document.querySelector(".nav").style.display = "none";
+    document.querySelector("span").classList.remove("active");
+  });
+}
