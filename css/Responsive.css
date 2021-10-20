@@ -12,6 +12,9 @@
     input[type=submit]{
         width: 25%;
     }
+    .fa-arrow-circle-up{
+        right: 30px;
+    }
 }
 @media (max-width:768px) {
     .logo,.nav-btn{
