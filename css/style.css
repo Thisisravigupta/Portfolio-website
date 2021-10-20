@@ -12,16 +12,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-.btn{
+.btn,.btn1{
     background-color: var(--red);
     border-radius: 5px;
     padding: 10px 20px;
-    border: none;
+    border: 1px solid var(--white);
     outline: none;
     color: var(--white);
     text-transform: capitalize;
     font-size: 15px;
     cursor: pointer;
+    transition: all 0.5s;
+}
+.btn:hover{
+    color: var(--red);
+    background-color: var(--white);
+    border: 1px solid var(--red);
 }
 .container{
     width: 100%;
@@ -53,16 +59,16 @@
     position: relative;
     z-index: 2;
 }
-.btn span{
+.btn1 span{
     width: 40%;
     height: 2.5px;
     background-color: var(--white);
     position: absolute;
 }
-.btn span.active{
+.btn1 span.active{
     background: transparent;
 }
-.btn span::before,.btn span::after{
+.btn1 span::before,.btn1 span::after{
     content: "";
     width: 100%;
     height: 100%;
@@ -71,13 +77,13 @@
     transform: translateY(-5px);
     transition: all 0.5s;
 }
-.btn span::after{
+.btn1 span::after{
     transform: translateY(5px);
 }
-.btn span.active::before{
+.btn1 span.active::before{
     transform: rotate(45deg);
 }
-.btn span.active::after{
+.btn1 span.active::after{
     transform: rotate(-45deg);
 }
 .nav{
@@ -464,6 +470,7 @@
     border: none;
     border-radius: 2px;
     box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+    outline: none;
 }
 input::placeholder,textarea::placeholder{
     text-transform: capitalize;
@@ -474,6 +481,15 @@ input[type=submit]{
     width: 20%;
     cursor: pointer;
     color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 5px;
+    transition: all 0.5s;
+    text-transform: capitalize;
+}
+input[type=submit]:hover{
+    color: var(--red);
+    background-color: var(--white);
+    border: 1px solid var(--red);
 }
 /* -----------Contact-Section End------------ */
 
