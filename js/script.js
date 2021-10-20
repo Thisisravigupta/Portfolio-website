@@ -41,6 +41,12 @@ document.querySelector(".bar3").addEventListener("click", function () {
   document.querySelector(".bar3").classList.add("active");
 
 });
+
+// --------Back to Top---------
+document.querySelector(".fa-arrow-circle-up").addEventListener("click", function(){
+    window.scrollTo(0, 0);
+});
+
 // ------Close Nav when clicking on link------
 let listItem = document.querySelectorAll(".list-item");
 for (let i = 0; i <= listItem.length; i++) {
@@ -48,4 +54,5 @@ for (let i = 0; i <= listItem.length; i++) {
     document.querySelector(".nav").style.display = "none";
     document.querySelector("span").classList.remove("active");
   });
-}
+};
+
