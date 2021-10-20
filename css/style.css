@@ -6,6 +6,8 @@
   --black-opacity-2: rgba(0, 0, 0, 0.2);
   --black-opacity-6: rgba(0, 0, 0, 0.6);
 }
+
+/* ----Custom scrollbar---- */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -16,6 +18,7 @@
   background: var(--red);
   border-radius: 5px;
 }
+
 /* Global */
 * {
   margin: 0;
